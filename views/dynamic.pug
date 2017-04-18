@@ -1,7 +1,10 @@
 doctype html
 html
 head
-  title= 'Hello View'
+  title= 'Hello Cookie'
 body
-  h1= 'Hello Dynamic Template'
-  h3= idNum
+  h1= 'Hello Cookie User'
+  if(idNum)
+    h3= "Welcome back, " + idNum
+  else
+    h3= "User not signed in!"
